@@ -10,7 +10,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <failOnMissingWebXml>true</failOnMissingWebXml>
+        <failOnMissingWebXml>false</failOnMissingWebXml>
         <vaadin.version>8.0.0.alpha2</vaadin.version>
         <vaadin.plugin.version>${vaadin.version}</vaadin.plugin.version>
          <sonar.host.url>http:172.31.5.173:9000/</sonar.host.url>
@@ -23,14 +23,14 @@
                <name>Ategha Snapshot Nexus Repository</name>
                <url>http://172.31.22.244:8081/repository/MWA/</url>
         </snapshotRepository>
-        <!-- <repository>
+         <repository>
                <id>nexus</id>
                <name>Ategha Release Nexus Repository</name>
                <url>http://172.31.22.244:8081/repository/MWA-release/</url>
-         </repository> -->
+         </repository>
   </distributionManagement>
     <repositories>
-        <repository>
+       <!-- <repository>
             <id>vaadin-prereleases</id>
             <name>Vaadin Pre-releases</name>
             <url>https://maven.vaadin.com/vaadin-prereleases</url>
@@ -41,7 +41,7 @@
             <id>vaadin-addons</id>
             <url>https://maven.vaadin.com/vaadin-addons</url>
         </repository>
-    </repositories>
+    </repositories> -->
     <dependencies>
         <dependency>
             <groupId>com.vaadin</groupId>
