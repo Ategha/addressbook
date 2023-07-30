@@ -20,13 +20,13 @@
      <distributionManagement>
         <snapshotRepository>
                <id>nexus</id>
-               <name>Ategha Snapshot Nexus Repository</name>
-               <url>http://172.31.22.244:8081/repository/MWA/</url>
+               <name>Ategha Release Nexus Repository</name>
+               <url>http://172.31.22.244:8081/repository/MWA-release/</url>
         </snapshotRepository>
          <repository>
                <id>nexus</id>
-               <name>Ategha Release Nexus Repository</name>
-               <url>http://172.31.22.244:8081/repository/MWA-release/</url>
+               <name>Ategha Snapshot Nexus Repository</name>
+               <url>http://172.31.22.244:8081/repository/MWA/</url>
          </repository>
   </distributionManagement>
     <repositories>
