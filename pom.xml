@@ -13,7 +13,22 @@
         <failOnMissingWebXml>false</failOnMissingWebXml>
         <vaadin.version>8.0.0.alpha2</vaadin.version>
         <vaadin.plugin.version>${vaadin.version}</vaadin.plugin.version>
+         <sonar.host.url>http:172.31.5.173:9000/</sonar.host.url>
+         <sonar.login>admin</sonar.login>
+         <sonar.password>admin</sonar.password>
     </properties>
+     <distributionManagement>
+         <repository>
+               <id>nexus</id>
+               <name>Ategha Release Nexus Repository</name>
+               <url>http://172.31.22.244:8081/repository/MWA-release/</url>
+         </repository>
+        <snapshotRepository>
+               <id>nexus</id>
+               <name>Ategha Snapshot Nexus Repository</name>
+               <url>http://172.31.22.244:8081/repository/MWA/</url>
+        </snapshotRepository>
+  </distributionManagement>
     <repositories>
         <repository>
             <id>vaadin-prereleases</id>
